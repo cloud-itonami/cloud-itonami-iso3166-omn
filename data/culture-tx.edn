@@ -1,0 +1,15 @@
+;; data/culture-tx.edn — DataScript tx-data derived from src/culture/facts.cljc
+;; `culture.facts/catalog` (ADR-2607171400 addendum 2, Wave 1 country-level).
+;; Same shape across every cloud-itonami-iso3166-* sibling. Do not hand-edit;
+;; regenerate from the catalog.
+
+[
+#:culture{:id "omn.dish.mashuai", :name "Mashuai", :country "OMN", :kind :dish, :summary "Whole spit-roasted kingfish dish in Omani cuisine, served with a side of lemon rice.", :url "https://en.wikipedia.org/wiki/Omani_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.dish.shuwaa", :name "Shuwaa", :country "OMN", :kind :dish, :summary "Omani dish of chunks of goat, sheep, cow, or camel meat marinated in a spicy date paste and roasted.", :url "https://en.wikipedia.org/wiki/Omani_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.dish.machboos", :name "Machboos", :country "OMN", :kind :dish, :summary "Rice dish in Omani cuisine, sometimes flavored with saffron and cooked in the same water the chicken or meat was cooked in.", :url "https://en.wikipedia.org/wiki/Omani_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.dish.omani-halwa", :name "Omani Halwa", :country "OMN", :kind :dish, :summary "Sweet traditionally served alongside Omani coffee (kahwa) and dates in Oman.", :url "https://en.wikipedia.org/wiki/Omani_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.beverage.kahwa", :name "Kahwa", :country "OMN", :kind :beverage, :summary "Omani coffee mixed with cardamom powder, often served as a symbol of hospitality, typically with dates and Omani halwa.", :url "https://en.wikipedia.org/wiki/Omani_cuisine", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.product.frankincense", :name "Frankincense", :country "OMN", :kind :product, :summary "Aromatic resin from Boswellia trees; grows in Dhofar, Oman, north of Salalah, and was traded through the ancient ports of Sumhuram (Khor Rori) and Al-Baleed.", :url "https://en.wikipedia.org/wiki/Frankincense", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.craft.khanjar", :name "Khanjar", :country "OMN", :kind :craft, :summary "Traditional dagger originating from the Sultanate of Oman; a national symbol featured on Oman's national emblem and on the Omani rial.", :url "https://en.wikipedia.org/wiki/Khanjar", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+#:culture{:id "omn.heritage.bahla-fort", :name "Bahla Fort", :country "OMN", :kind :heritage, :summary "One of four historic fortresses at the foot of the Jebel Akhdar highlands in Oman; Oman's first UNESCO World Heritage-listed fort, added in 1987.", :url "https://en.wikipedia.org/wiki/Bahla_Fort", :url-provenance :wikipedia-en, :retrieved-at "2026-07-17"}
+]
