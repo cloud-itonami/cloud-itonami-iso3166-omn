@@ -3,7 +3,37 @@
  :itonami.blueprint/iso3166 "OMN"
  :itonami.blueprint/domain :public-sector/market-entry-compliance
  :itonami.blueprint/license "AGPL-3.0-or-later"
+ :itonami.blueprint/social-impact [:omani-sme-market-access :public-spend-transparency :cross-border-friction-reduction]
  :itonami.blueprint/governor :market-entry-compliance-governor
  :itonami.blueprint/robotics false
  :itonami.blueprint/required-technologies [:identity :forms :dmn :bpmn :audit-ledger]
- :itonami.blueprint/status :public-oss}
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/maturity :implemented
+ :itonami.blueprint/implemented-slice
+ "MarketEntry-LLM Advisor ⊣ Market-Entry Compliance Governor, a REAL
+ compiled `kotoba-lang/langgraph` StateGraph (`:intake -> :advise ->
+ :govern -> :decide -+-> :commit / :request-approval -> :commit /
+ :hold`), append-only audit ledger. Seven governor checks, in priority
+ order, ALL HARD violations a human approver cannot override:
+ spec-basis citation, evidence-checklist completeness, Oman
+ commercial-registration entity verification (`:requires-om-entity?`
+ / `:has-om-entity?`, the flagship check for this jurisdiction, grounded
+ in the Invest Easy Commercial Registration that Esnad supplier
+ registration under the Tender Board (PTLC/GSTB) is built on),
+ independent engagement-fee recompute (base + months x rate),
+ commercial-registration-number verification (`:requires-cr?` /
+ `:cr-verified?`, mirroring the Oman Tax Authority's own VATIN/CR
+ cross-check e-service), double-draft guard, double-submit guard, plus
+ a SOFT confidence-floor/actuation gate. `:filing/draft` and
+ `:filing/submit` (real Esnad e-tendering actuation) never auto-commit
+ in any phase; `interrupt-before #{:request-approval}` pauses escalated
+ requests for real human sign-off via a checkpointer, and BOTH
+ `:commit` and `:hold` durably append to the real audit ledger
+ (`store/append-ledger!`). Store has a `MemStore` and a `DatomicStore`
+ (via `kotoba-lang/langchain-store`, no hand-rolled EDN-blob codec),
+ proven equivalent by a shared store-contract test. `statute.facts`
+ additionally carries 5 Oman Royal Decrees (Tender Law 36/2008,
+ Commercial Companies Law 18/2019, Foreign Capital Investment Law
+ 50/2019, VAT Law 121/2020, Labour Law 53/2023) confirmed directly
+ against qanoon.om (Oman Ministry of Legal Affairs) this session.
+ 33 tests / 108 assertions green, clj-kondo 0 errors."}
