@@ -1,0 +1,53 @@
+;; data/datascript-tx.edn — DataScript tx-data derived from src/statute/facts.cljc
+;; `statute.facts/catalog` (ADR-2607141700). Same shape as sibling files.
+
+[#:statute{:id "omn.royal-decree-36-2008-tender-law"
+           :title "Tender Law"
+           :jurisdiction "OMN"
+           :kind :law
+           :law-number "Royal Decree No. 36/2008"
+           :url "https://qanoon.om/p/2008/rd2008036/"
+           :url-provenance :qanoon-om-official-legislation-portal
+           :enacted-date "2008-03-24"
+           :retrieved-at "2026-07-23"
+           :topic [:public-procurement :market-entry]}
+ #:statute{:id "omn.royal-decree-18-2019-commercial-companies-law"
+           :title "Commercial Companies Law"
+           :jurisdiction "OMN"
+           :kind :law
+           :law-number "Royal Decree No. 18/2019"
+           :url "https://qanoon.om/p/2019/rd2019018/"
+           :url-provenance :qanoon-om-official-legislation-portal
+           :enacted-date "2019-02-13"
+           :retrieved-at "2026-07-23"
+           :topic [:corporate-governance :incorporation]}
+ #:statute{:id "omn.royal-decree-50-2019-foreign-capital-investment-law"
+           :title "Foreign Capital Investment Law"
+           :jurisdiction "OMN"
+           :kind :law
+           :law-number "Royal Decree No. 50/2019"
+           :url "https://qanoon.om/p/2019/rd2019050/"
+           :url-provenance :qanoon-om-official-legislation-portal
+           :enacted-date "2019-07-01"
+           :retrieved-at "2026-07-23"
+           :topic [:foreign-investment :market-entry]}
+ #:statute{:id "omn.royal-decree-121-2020-vat-law"
+           :title "Value Added Tax Law"
+           :jurisdiction "OMN"
+           :kind :law
+           :law-number "Royal Decree No. 121/2020"
+           :url "https://qanoon.om/p/2020/rd2020121/"
+           :url-provenance :qanoon-om-official-legislation-portal
+           :enacted-date "2020-10-12"
+           :retrieved-at "2026-07-23"
+           :topic [:tax :vat]}
+ #:statute{:id "omn.royal-decree-53-2023-labour-law"
+           :title "Labour Law"
+           :jurisdiction "OMN"
+           :kind :law
+           :law-number "Royal Decree No. 53/2023"
+           :url "https://qanoon.om/p/2023/rd2023053/"
+           :url-provenance :qanoon-om-official-legislation-portal
+           :enacted-date "2023-07-25"
+           :retrieved-at "2026-07-23"
+           :topic [:labor :omanisation]}]
