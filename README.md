@@ -3,7 +3,7 @@
 **`:implemented`** for **OMN**. Flagship `om-entity-missing`, tax `cr-unverified`.
 
 ```
-clojure -M:dev:test
+kbb -M:dev:test
 ```
 
 ## Market-entry / statute catalogs
