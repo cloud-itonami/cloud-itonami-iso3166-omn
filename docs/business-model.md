@@ -60,8 +60,8 @@
   and filing on the client's behalf beyond checklist/draft assistance
   routes to Omani-licensed counsel or a registered agent
 - every requirement cites the official portal or regulation, never
-  invented — see `src/marketentry/facts.cljc` and
-  `src/statute/facts.cljc` for the exact URLs fetched and read this
+  invented — see `src/marketentry/facts.cljk` and
+  `src/statute/facts.cljk` for the exact URLs fetched and read this
   session, and their docstrings for gaps disclosed rather than filled
   in with an invented figure (e.g. no bare "100%" foreign-ownership
   number is asserted, only the law's own "wholly or by participation"
