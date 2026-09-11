@@ -25,11 +25,11 @@ clojure -M:dev:test
   (التعمين) workforce-nationalization requirements.
 
 Every citation above was fetched and read directly this session (see
-`src/marketentry/facts.cljc` and `src/statute/facts.cljc` docstrings
+`src/marketentry/facts.cljk` and `src/statute/facts.cljk` docstrings
 for exact URLs and verbatim confirmation). Gaps that could not be
 independently confirmed (e.g. a specific "100%" foreign-ownership
 figure, or per-sector Omanisation quota percentages) are disclosed in
-`src/statute/facts.cljc`, not filled in with an invented number.
+`src/statute/facts.cljk`, not filled in with an invented number.
 
 AGPL-3.0-or-later.
 
@@ -41,7 +41,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Oman:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
